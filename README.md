@@ -45,7 +45,7 @@ mlm_commission_engine/
 1.  **Clone the repository:**
 
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/Kalinka5/AnyforSoft_task.git
     cd mlm_commission_engine
     ```
 
@@ -68,7 +68,7 @@ mlm_commission_engine/
 To calculate commissions, run the `main.py` script with the required arguments.
 
 ```bash
-python main.py --input /path/to/partners.json --output /path/to/commissions.json [--month YYYY-MM]
+python main.py --input sample_data/partners.json --output results/commissions.json [--month YYYY-MM]
 ```
 
 - `--input`: Path to the input JSON file containing partner data.
@@ -78,7 +78,7 @@ python main.py --input /path/to/partners.json --output /path/to/commissions.json
 **Example:**
 
 ```bash
-python main.py --input sample_data/partners.json --output commissions.json --month 2023-11
+python main.py --input sample_data/partners.json --output results/commissions.json --month 2023-11
 ```
 
 ### Running Tests
