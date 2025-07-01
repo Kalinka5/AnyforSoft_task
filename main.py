@@ -39,7 +39,6 @@ def main():
             year, month = get_current_year_month()
 
         days_in_month = get_days_in_month(year, month)
-        print(f"{days_in_month} days")
 
         partners = load_partners(args.input)
         validate_hierarchy(partners)

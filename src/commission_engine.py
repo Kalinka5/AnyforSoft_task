@@ -69,10 +69,7 @@ class CommissionCalculator:
                     # plus all of its own descendants.
                     descendants_revenue += self._memo.get(child_id, 0)
             
-            print(f"descendants_revenue: {descendants_revenue} days: {self._days_in_month}")
             daily_gross_profit = descendants_revenue / self._days_in_month
-            print(f"Partner {partner_id} has {daily_gross_profit} revenue")
             commissions[partner_id] = round(daily_gross_profit * COMMISSION_RATE, 2)
-            print(f"Partner {partner_id} has {commissions[partner_id]} revenue")
             
         return commissions
